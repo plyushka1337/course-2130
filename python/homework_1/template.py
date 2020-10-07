@@ -11,7 +11,10 @@ def t1(number):
     Пример: number=21 тогда нужно вернуть 40
     Пример: -5 -> 0
     """
-    return number + (20 - number % 20)
+    if number % 20 == 0:
+        return number
+    else:
+        return number + (20 - number % 20)
 
 
 def t2(string):
